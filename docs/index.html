@@ -15,7 +15,6 @@
     <a class="logo" href="#">
       <img src="./assets/logo.svg" alt="logo"/><span class="brand">Blog Spec</span>
     </a>
-    <span class="badge">v1.0 • 2025-10-29</span>
     <nav></nav>
   </div>
 </header>
@@ -24,7 +23,7 @@
   <section class="hero" id="overview">
     <div>
       <h1 class="title">블로그 시스템 명세<br/><span class="hl">Spring Boot + MySQL</span></h1>
-      <p class="subtitle">게시글/댓글/좋아요, 동영상 스토리, 공지사항까지 포함한 학습용 블로그 프로젝트의 핵심 스펙을 한 눈에 정리했습니다. (README 용 HTML)</p>
+      <p class="subtitle">게시글/댓글/좋아요, 동영상 스토리, 공지사항까지 포함한 <br>학습용 블로그 프로젝트의 핵심 스펙을 한 눈에 정리했습니다.</p>
       <div class="cta">
         <a class="btn btn-primary" href="#run">빠른 실행 안내</a>
         <a class="btn btn-outline" href="#db">데이터베이스 구조</a>
@@ -40,7 +39,6 @@
         <span class="pill">Thymeleaf</span>
         <span class="pill">JPA + MyBatis</span>
       </div>
-      <p class="small muted">원문: PROJECT_SPECIFICATION.md</p>
     </div>
   </section>
 
@@ -54,23 +52,23 @@
       </div>
       <div class="card" data-card>
         <h3>DB</h3>
-        <p>MySQL 8.0 (utf8mb4), HikariCP, H2(테스트)</p>
+        <p>MySQL 8.0.42, HikariCP, H2</p>
       </div>
       <div class="card" data-card>
         <h3>보안</h3>
-        <p>Spring Security(Form Login, Remember-Me, URL 인가)</p>
+        <p>Spring Security</p>
       </div>
       <div class="card" data-card>
         <h3>Persistence</h3>
-        <p>JPA + MyBatis 혼용 (학습 목적), Hibernate SQL 로그</p>
+        <p>JPA + MyBatis, Hibernate SQL 로그</p>
       </div>
       <div class="card" data-card>
         <h3>프론트</h3>
-        <p>Thymeleaf + Vanilla JS, 스타일 가벼운 네온 포인트</p>
+        <p>Thymeleaf + Vanilla JS</p>
       </div>
       <div class="card" data-card>
         <h3>외부 API</h3>
-        <p>Kakao Maps JavaScript API (게시글 위치)</p>
+        <p>Kakao Maps JavaScript API</p>
       </div>
     </div>
   </section>
@@ -104,19 +102,7 @@
 /posts/** (GET), /stories/** (GET), /notice/** (GET) : permitAll
 /posts, /stories, /notice 쓰기·수정·삭제 : ADMIN
       </div>
-      <p class="small muted">개발용으로 NoOpPasswordEncoder 사용(운영 금지).</p>
-    </div>
-  </section>
-
-  <section id="structure">
-    <div class="section-title"><h2>프로젝트 구조(발췌)</h2><span class="badge">modules</span></div>
-    <div class="card code">
-blog/
-├─ src/main/java/com/example/blog/...
-├─ src/main/resources/static/css/style.css
-├─ src/main/resources/templates/...
-├─ create_tables.sql
-└─ PROJECT_SPECIFICATION.md
+      <p class="small muted">개발용으로 NoOpPasswordEncoder 사용</p>
     </div>
   </section>
 
@@ -131,6 +117,54 @@ blog/
     </div>
   </section>
 
+  <section id="schedule" style="margin-top:48px;">
+    <div class="section-title"><h2>일정 대시보드</h2><span class="badge">Gantt Chart</span></div>
+    <div class="card" style="padding:0;overflow-x:auto;">
+      <table class="gantt-table">
+        <thead>
+          <tr>
+            <th style="width:160px">작업</th>
+            <th colspan="20">일정</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="gantt-bar-row">
+            <td>개발 일정 계획</td>
+            <td colspan="20" style="position:relative;min-width:600px;">
+              <div class="gantt-bar plan" style="left:0%;width:18%;"></div>
+            </td>
+          </tr>
+          <tr class="gantt-bar-row">
+            <td>화면 설계 및 디자인</td>
+            <td colspan="20" style="position:relative;min-width:600px;">
+              <div class="gantt-bar design" style="left:13%;width:25%;"></div>
+            </td>
+          </tr>
+          <tr class="gantt-bar-row">
+            <td>웹프로그래밍</td>
+            <td colspan="20" style="position:relative;min-width:600px;">
+              <div class="gantt-bar dev" style="left:32%;width:40%;"></div>
+            </td>
+          </tr>
+          <tr class="gantt-bar-row">
+            <td>테스트, 디버깅</td>
+            <td colspan="20" style="position:relative;min-width:600px;">
+              <div class="gantt-bar test" style="left:75%;width:23%;"></div>
+            </td>
+          </tr>
+          <tr class="gantt-date-row">
+            <td></td>
+            <td colspan="20">
+              <div style="display:flex;justify-content:space-between;width:100%;font-size:12px;">
+                <span>10/30</span><span>11/1</span><span>11/4</span><span>11/7</span><span>11/10</span><span>11/13</span><span>11/17</span>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="small muted" style="text-align:center;margin:8px 0 0 0;">주요 일정: 개발 계획, 화면 설계, 웹프로그래밍, 테스트/디버깅</p>
+    </div>
+  </section>
   <div class="footer">
     © 2025-10-29 Blog Spec • Built for README preview (GitHub Pages 호환)
   </div>

@@ -8,8 +8,8 @@ const sections = [
   { id: "stack", title: "기술 스택" },
   { id: "db", title: "데이터베이스" },
   { id: "security", title: "보안" },
-  { id: "structure", title: "프로젝트 구조" },
   { id: "run", title: "실행 방법" },
+  { id: "schedule", title: "일정 대시보드" },
 ];
 
 window.addEventListener("DOMContentLoaded", () => {

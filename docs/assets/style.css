@@ -1,3 +1,38 @@
+/* Gantt Chart Styles */
+.gantt-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 24px 0 8px 0;
+  font-size: 15px;
+}
+.gantt-table th, .gantt-table td {
+  padding: 8px 6px;
+  text-align: left;
+  border-bottom: 1px solid var(--ring);
+  background: transparent;
+}
+.gantt-bar-row {
+  position: relative;
+  height: 32px;
+}
+.gantt-bar {
+  position: absolute;
+  height: 18px;
+  border-radius: 9px;
+  top: 7px;
+  z-index: 1;
+}
+.gantt-bar.plan { background: #4f8cff; }
+.gantt-bar.design { background: #ffd36e; }
+.gantt-bar.dev { background: #5ea2ff; }
+.gantt-bar.test { background: #ffe08a; }
+.gantt-date-row td {
+  font-size: 12px;
+  color: var(--muted);
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 :root{
   --accent:#42B4E6;
