@@ -20,6 +20,7 @@
 </header>
 
 <main class="container">
+  <!-- Hero -->
   <section class="hero" id="overview">
     <div>
       <h1 class="title">블로그 시스템 명세<br/><span class="hl">Spring Boot + MySQL</span></h1>
@@ -42,6 +43,7 @@
     </div>
   </section>
 
+  <!-- Stack -->
   <section id="stack">
     <div class="section-title"><h2>기술 스택</h2><span class="badge">WAS/DB/Front</span></div>
     <div class="searchbar"><input id="search" placeholder="스펙 카드 필터 (예: Security, Kakao, Hikari)"/><button>Filter</button></div>
@@ -73,6 +75,7 @@
     </div>
   </section>
 
+  <!-- DB -->
   <section id="db">
     <div class="section-title"><h2>데이터베이스 개요</h2><span class="badge">13 Tables</span></div>
     <div class="card">
@@ -93,6 +96,7 @@
     </div>
   </section>
 
+  <!-- Security -->
   <section id="security">
     <div class="section-title"><h2>보안 요약</h2><span class="badge">Spring Security</span></div>
     <div class="card">
@@ -106,6 +110,7 @@
     </div>
   </section>
 
+  <!-- Run -->
   <section id="run">
     <div class="section-title"><h2>실행 방법</h2><span class="badge">Quickstart</span></div>
     <div class="card">
@@ -117,6 +122,7 @@
     </div>
   </section>
 
+  <!-- Schedule (Gantt) -->
   <section id="schedule" style="margin-top:48px;">
     <div class="section-title"><h2>일정 대시보드</h2><span class="badge">Gantt Chart</span></div>
     <div class="card" style="padding:0;overflow-x:auto;">
@@ -128,35 +134,37 @@
           </tr>
         </thead>
         <tbody>
-          <tr class="gantt-bar-row">
+          <tr class="gantt-row">
             <td>개발 일정 계획</td>
-            <td colspan="20" style="position:relative;min-width:600px;">
-              <div class="gantt-bar plan" style="left:0%;width:18%;"></div>
+            <td colspan="20">
+              <div class="gantt-bar plan" style="--left:0; --width:18;"></div>
             </td>
           </tr>
-          <tr class="gantt-bar-row">
+          <tr class="gantt-row">
             <td>화면 설계 및 디자인</td>
-            <td colspan="20" style="position:relative;min-width:600px;">
-              <div class="gantt-bar design" style="left:13%;width:25%;"></div>
+            <td colspan="20">
+              <div class="gantt-bar design" style="--left:13; --width:25;"></div>
             </td>
           </tr>
-          <tr class="gantt-bar-row">
+          <tr class="gantt-row">
             <td>웹프로그래밍</td>
-            <td colspan="20" style="position:relative;min-width:600px;">
-              <div class="gantt-bar dev" style="left:32%;width:40%;"></div>
+            <td colspan="20">
+              <div class="gantt-bar dev" style="--left:32; --width:40;"></div>
             </td>
           </tr>
-          <tr class="gantt-bar-row">
+          <tr class="gantt-row">
             <td>테스트, 디버깅</td>
-            <td colspan="20" style="position:relative;min-width:600px;">
-              <div class="gantt-bar test" style="left:75%;width:23%;"></div>
+            <td colspan="20">
+              <div class="gantt-bar test" style="--left:75; --width:23;"></div>
             </td>
           </tr>
+
           <tr class="gantt-date-row">
             <td></td>
             <td colspan="20">
               <div style="display:flex;justify-content:space-between;width:100%;font-size:12px;">
-                <span>10/30</span><span>11/1</span><span>11/4</span><span>11/7</span><span>11/10</span><span>11/13</span><span>11/17</span>
+                <span>10/30</span><span>11/1</span><span>11/4</span><span>11/7</span>
+                <span>11/10</span><span>11/13</span><span>11/17</span>
               </div>
             </td>
           </tr>
@@ -165,6 +173,7 @@
       <p class="small muted" style="text-align:center;margin:8px 0 0 0;">주요 일정: 개발 계획, 화면 설계, 웹프로그래밍, 테스트/디버깅</p>
     </div>
   </section>
+
   <div class="footer">
     © 2025-10-29 Blog Spec • Built for README preview (GitHub Pages 호환)
   </div>
